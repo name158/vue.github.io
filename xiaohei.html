@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小黑记事本</title>
+</head>
+<body>
+    <h2>小黑记事本</h2>
+    <div id="app" align:right>
+        <input type="text"  placeholder="请输入任务" v-model="intvalue" @keyup.enter="add">
+        <ul>
+            <li v-for="(item,index) in list">
+                <div>
+                <span>{{index+1}}.</span>
+                <label>{{item}}</label>
+                <button class="destroy" @click="del(index)"></button>
+               </div>
+            </li>
+        </ul>
+        <footer v-show="list.length!=0">
+            <span v-show="list.length!=0">{{list.length}}个任务</span>
+            <button color:red @click="clear">清空</button>
+        </footer>
+      </div>
+     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+     <script> app = new Vue({
+         el: '#app',
+         data: {
+            list:["写代码","打豆豆","睡觉觉"],
+            intvalue:"好好学习天天向上",    
+                 },
+     methods:{
+         add:function()
+         {
+            this.list.push(this.intvalue);
+         },
+         del:function(index)
+         {
+            this.list.splice(index,1) 
+         },
+         
+         clear:function()
+         {
+             this.list=[];
+         },
+     },
+    })</script>
+</body>
+</html>

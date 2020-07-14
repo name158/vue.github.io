@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片展示</title>
+</head>
+<body>
+ 
+    <div id="app">
+        <input type="button" value="出现消失" @click="changeisshow">
+        <img src="timg.jpg" v-show="isshow" alt="" width="20%" height="10%">
+        <img src="timg.jpg" v-show="age>18" alt="">
+      </div>
+     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+     <script> app = new Vue({
+         el: '#app',
+         data: {
+           isshow:false,
+           age:19,
+     },
+     methods:{
+         changeisshow:function(){
+             this.isshow=!this.isshow;
+         }
+     },
+    })</script>
+</body>
+</html>

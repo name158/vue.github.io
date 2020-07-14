@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title><vue简单程序基础</title>
+        </head>
+ <body>
+     <div id="app">
+       <h1 v-text="message"></h1>
+       <h2 v-html="content"></h2>
+       <button @click="sub">-</button>
+       <span>{{num}}</span>
+       <button @click="add">+</button>
+     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script> app = new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello Vue!',
+          content:'<a href="https://www.baidu.com/?tn=02003390_3_hao_pg">百度</a>',
+        num:"0",
+    },
+     methods:{
+sub:function()
+ {
+         if(this.num>0)
+         {
+          this.num--;
+          }
+else{
+    alert("别点了，最小了")
+    alert(this)
+    }
+  },
+
+  add:function()
+ {
+         if(this.num<10)
+         {
+          this.num++;
+          }
+else{
+    alert("别点了，最大了")
+    }
+  }
+
+    }
+    })</script>
+
+ </body>
+</html>

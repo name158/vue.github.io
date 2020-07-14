@@ -1,0 +1,223 @@
+
+
+#one
+{
+    width: 800px;
+    height: 500px;
+    max-width: 800px;
+    max-height: 500px;
+    box-shadow: 0px 0px 100px black;
+    position: absolute;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left:300px;
+    margin-right:300px;
+    margin: 0 auto;
+
+}
+ /* .search
+    {
+      margin-left: 500px;
+  
+    } */
+.searchbox
+{
+    width: 200px;
+    height: 21px;
+}
+.header
+{
+    width: 800px;
+    height: 40px;
+    background: #2ab2ab;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.music
+{
+    font-weight: 600;
+    float: left;
+    float: left;
+    font-size: 20px;
+    color: #f0f0f0;
+    padding: 26px 40px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 26px;
+    padding-left: 50px;
+}
+.close
+{
+    float: right;
+  margin-left: 60px;
+  margin-top: -20px;
+   font-weight: 600;
+}
+.middle
+{
+    width: 800px;
+    height: 410px;
+  
+}
+.middletwo
+{
+    width: 380px;
+    height: 410px;
+}
+.querylist
+{
+    width: 240px;
+    height:410px;
+    background: royalblue;
+    top: 40px;
+    left: 0px;
+   
+
+}
+.right
+{
+   
+    
+    width: 560px;
+    height: 410px;
+    background: royalblue;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    overflow: hidden;
+}
+.hotComments h1
+{
+font-weight: 600;
+color: black;
+}
+
+
+.mving
+{
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.img
+{
+    width: 150px;
+    height: 160px;
+    border:0;
+    position: absolute;
+    top: 110px;
+    left: 72px;
+     border-radius: 75px;
+  
+   
+}
+.autoRotate {
+    animation-name: Rotate;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+  }
+.comments
+{
+    width: 180px;
+    height: 410px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 50px;
+    
+    font-size: 12px;
+    color: wheat;
+    overflow-y: auto; 
+}
+.name
+{
+font-weight: 300;
+color: darkorange;
+}
+.content
+{
+    font-weight: 200;
+    color: black;
+}
+.footer
+{
+   
+    width: 800px;
+    height: 100%;
+    position: relative;
+    background-color:red;
+    outline: none;
+    
+}
+ul{
+    
+    width: 200px;
+    height: 410px;
+    max-height: 410px;
+    background-color: royalblue;
+    overflow-y: auto;
+    position: relative;
+   float: left;
+   left: 0px;
+}
+ul::-webkit-scrollbar{
+    display: none;
+}
+ul li{
+    height: 17px;
+    cursor: pointer;
+    padding: 8px 10px;
+    margin: 10px;
+    border-radius: 4px;
+    color: white;
+    text-align: right;
+    transition: all 1s;
+    font-size: 13px;
+
+    white-space: nowrap;   
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+ul li:hover{
+    background: #2ab2ab;
+}
+.imgtwo
+{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+/* 旋转的类名 */
+.autoRotate[data-v-175d0d9d] {
+    -webkit-animation-name: Rotate-data-v-175d0d9d;
+            animation-name: Rotate-data-v-175d0d9d;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+  }
+/* 是否正在播放 */
+.middletwo.playing .mving[data-v-175d0d9d],
+.player_con.playing .img[data-v-175d0d9d] {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+/* .play_bar[data-v-175d0d9d] {
+  position: absolute;
+  left: 140px;
+  top: -18px;
+  z-index: 10;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  -webkit-transform-origin: 12px 12px;
+          transform-origin: 12px 12px;
+  -webkit-transition: 1s;
+  transition: 1s;
+} */

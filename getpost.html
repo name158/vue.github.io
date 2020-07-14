@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="get" class="get"></input>
+    <input type="button" value="post" class="post"></input>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    document.querySelector(".get").onclick=function()
+    {  axios.get("https://autumnfish.cn/api/joke/list?num=5").then(function(response){console.log(response)},
+    function(err){console.log(err)})
+    }
+    document.querySelector(".post").onclick=function()
+    {  axios.post("https://autumnfish.cn/api/user/reg",{username:"wuhu"}).then(function(response){console.log(response)},
+    function(err){console.log(err)})
+
+
+    }
+</script>
+</body>
+</html>
